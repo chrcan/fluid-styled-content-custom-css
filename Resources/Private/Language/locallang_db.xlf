@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
+          product-name="ttcontent_addfields">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.palette_title">
+                <source>My custom css class field</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_ttcontentaddfields_customtext">
+                <source>Custom css class field</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

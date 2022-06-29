@@ -1,0 +1,24 @@
+{
+	"name": "rcdesign/ttcontent-addfields",
+	"type": "typo3-cms-extension",
+	"description": "Add CSS Class in Text & Media on Image",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"homepage": "https://www.rc-design.at",
+	"authors": [
+		{
+			"name": "Christian Racan",
+			"email": "werbegrafik@rc-design.at",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3/cms-core": ">=9.5.0 <11.5.99"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ttcontent_addfields"
+		}
+	}
+}
