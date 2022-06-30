@@ -41,5 +41,10 @@
 		"typo3/cms": {
 			"extension-key": "ttcontent_addfields"
 		}
+	},
+	"scripts": {
+		"clean": [
+			"rm -fr config public var vendor composer.lock || true"
+		]
 	}
 }
