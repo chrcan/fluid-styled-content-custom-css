@@ -25,8 +25,8 @@ defined('TYPO3_MODE') or die();
 
 // Configure new fields:
 $fields = [
-    'tx_ttcontentaddfields_customcss' => [
-        'label' => 'LLL:EXT:ttcontent_addfields/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ttcontentaddfields_customcss',
+    'tx_rcd_fluid_styled_content_custom_css_class' => [
+        'label' => 'LLL:EXT:rcd_fluid_styled_content_custom_css/Resources/Private/Language/locallang_db.xlf:tt_content.custom_css_class',
         'exclude' => 0,
         'config' => [
             'type' => 'input',
@@ -41,14 +41,14 @@ $fields = [
 // Make fields visible in the TCEforms:
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content', // Table name
-    '--palette--;;tx_ttcontentaddfields',
+    '--palette--;;tx_rcd_fluid_styled_content_custom_css',
     // Field list to add
     '', // List of specific types to add the field list to. (If empty, all type entries are affected)
     'after:space_after_class' // Insert fields before (default) or after one, or replace a field
 );
 
 // Add the new palette:
-$GLOBALS['TCA']['tt_content']['palettes']['tx_ttcontentaddfields'] = [
-    'label' => 'LLL:EXT:ttcontent_addfields/Resources/Private/Language/locallang_db.xlf:tt_content.palette_title',
-    'showitem' => 'tx_ttcontentaddfields_customcss',
+$GLOBALS['TCA']['tt_content']['palettes']['tx_rcd_fluid_styled_content_custom_css'] = [
+    'label' => 'LLL:EXT:rcd_fluid_styled_content_custom_css/Resources/Private/Language/locallang_db.xlf:tt_content.custom_css_palette_title',
+    'showitem' => 'tx_rcd_fluid_styled_content_custom_css_class',
 ];
