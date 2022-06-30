@@ -1,11 +1,8 @@
 {
 	"name": "rcdesign/fluid-styled-content-custom-css",
-	"type": "typo3-cms-extension",
 	"description": "CSS fields for Fluid Styled Content",
-	"license": [
-		"GPL-2.0-or-later"
-	],
-	"homepage": "https://www.rc-design.at",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
 	"authors": [
 		{
 			"name": "Christian Racan",
@@ -18,6 +15,7 @@
 			"role": "Developer"
 		}
 	],
+	"homepage": "https://www.rc-design.at",
 	"require": {
 		"typo3/cms-core": "^11.5",
 		"typo3/cms-fluid-styled-content": "^11.5"
