@@ -43,6 +43,20 @@
 	"scripts": {
 		"clean": [
 			"rm -fr config public var vendor composer.lock || true"
-		]
+		],
+		"fix": [
+			"@fix:composer",
+			"@fix:php"
+		],
+		"fix:composer": [
+			"@fix:composer:normalize"
+		],
+		"fix:composer:normalize": [
+			"@composer normalize --ansi -n"
+		],
+		"fix:php": [
+			"@fix:php:cs"
+		],
+		"fix:php:cs": "@php php-cs-fixer fix"
 	}
 }
