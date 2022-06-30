@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Additional tt_content css class field',
-    'description' => 'Add CSS Class in Text & Media on Image',
+    'title' => 'CSS fields for Fluid Styled Content',
+    'description' => 'Adds new CSS fields for Fluid Styled Content Content Elements',
     'category' => 'fe',
     'author' => 'Christian Racan',
     'author_email' => 'werbegrafik@rc-design.at',
