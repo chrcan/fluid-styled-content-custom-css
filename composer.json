@@ -11,6 +11,11 @@
 			"name": "Christian Racan",
 			"email": "werbegrafik@rc-design.at",
 			"role": "Developer"
+		},
+		{
+			"name": "Simon Gilli",
+			"email": "simon.gilli@gilbertsoft.com",
+			"role": "Developer"
 		}
 	],
 	"require": {
