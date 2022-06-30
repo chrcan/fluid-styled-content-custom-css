@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
-          product-name="ttcontent_addfields" target-language="de">
+          product-name="rcd_fluid_styled_content_custom_css" target-language="de">
         <header/>
         <body>
-            <trans-unit id="tt_content.palette_title">
-                <source>My custom css class field</source>
-                <target>Meine benutzerdefiniertes CSS Class Feld</target>
+            <trans-unit id="tt_content.custom_css_palette_title">
+                <source>Custom CSS</source>
+                <target>Benutzerdefiniertes CSS</target>
             </trans-unit>
-            <trans-unit id="tt_content.tx_ttcontentaddfields_customtext">
-                <source>Custom css class field</source>
-                <target>Benutzerdefiniertes CSS Class Feld</target>
+            <trans-unit id="tt_content.custom_css_class">
+                <source>Class</source>
+                <target>Klasse</target>
             </trans-unit>
         </body>
     </file>
