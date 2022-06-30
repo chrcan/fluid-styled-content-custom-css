@@ -1,7 +1,7 @@
 {
-	"name": "rcdesign/ttcontent-addfields",
+	"name": "rcdesign/fluid-styled-content-custom-css",
 	"type": "typo3-cms-extension",
-	"description": "Add CSS Class in Text & Media on Image",
+	"description": "CSS fields for Fluid Styled Content",
 	"license": [
 		"GPL-3.0-or-later"
 	],
@@ -39,7 +39,7 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ttcontent_addfields"
+			"extension-key": "rcd_fluid_styled_content_custom_css"
 		}
 	},
 	"scripts": {
