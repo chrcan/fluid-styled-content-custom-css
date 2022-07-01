@@ -3,6 +3,6 @@
 
 lib.contentElement {
     layoutRootPaths {
-        1 = EXT:rcd_fluid_styled_content_custom_css/Resources/Private/Layouts/
+        1 = EXT:rcd_fsc_custom_css/Resources/Private/Layouts/
     }
 }

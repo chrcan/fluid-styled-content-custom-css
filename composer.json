@@ -38,7 +38,7 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "rcd_fluid_styled_content_custom_css"
+			"extension-key": "rcd_fsc_custom_css"
 		}
 	},
 	"scripts": {
