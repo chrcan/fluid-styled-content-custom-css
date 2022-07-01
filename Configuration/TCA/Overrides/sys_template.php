@@ -21,22 +21,13 @@
  * The TYPO3 project - inspiring people to share!
  */
 
-$EM_CONF[$_EXTKEY] = [
-    'title' => 'CSS fields for Fluid Styled Content',
-    'description' => 'Adds new CSS fields for Fluid Styled Content Content Elements',
-    'category' => 'fe',
-    'author' => 'Christian Racan',
-    'author_email' => 'werbegrafik@rc-design.at',
-    'state' => 'alpha',
-    'version' => '0.1.0',
-    'constraints' => [
-        'depends' => [
-            'typo3' => '11.5.0-11.5.99',
-            'fluid_styled_content' => '11.5.0-11.5.99',
-        ],
-        'conflicts' => [
-        ],
-        'suggests' => [
-        ],
-    ],
-];
+defined('TYPO3') or die();
+
+// Replace FSC static include
+foreach ($GLOBALS['TCA']['sys_template']['columns']['include_static_file']['config']['items'] as &$itemArray) {
+    if ($itemArray[0] === 'Fluid Content Elements (fluid_styled_content)') {
+        $itemArray[0] = 'Fluid Content Elements (rcd_fluid_styled_content_custom_css)';
+        $itemArray[1] = 'EXT:rcd_fluid_styled_content_custom_css/Configuration/TypoScript/';
+        break;
+    }
+}

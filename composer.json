@@ -1,24 +1,63 @@
 {
-	"name": "rcdesign/ttcontent-addfields",
+	"name": "rcdesign/fluid-styled-content-custom-css",
+	"description": "CSS fields for Fluid Styled Content",
+	"license": "GPL-3.0-or-later",
 	"type": "typo3-cms-extension",
-	"description": "Add CSS Class in Text & Media on Image",
-	"license": [
-		"GPL-2.0-or-later"
-	],
-	"homepage": "https://www.rc-design.at",
 	"authors": [
 		{
 			"name": "Christian Racan",
 			"email": "werbegrafik@rc-design.at",
 			"role": "Developer"
+		},
+		{
+			"name": "Simon Gilli",
+			"email": "simon.gilli@gilbertsoft.com",
+			"role": "Developer"
 		}
 	],
+	"homepage": "https://www.rc-design.at",
 	"require": {
-		"typo3/cms-core": ">=9.5.0 <11.5.99"
+		"typo3/cms-core": "^11.5",
+		"typo3/cms-fluid-styled-content": "^11.5"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "*",
+		"typo3-console/composer-auto-commands": "*",
+		"typo3-console/composer-typo3-auto-install": "*",
+		"typo3/cms-lowlevel": "*",
+		"typo3/cms-tstemplate": "*",
+		"typo3/coding-standards": "*"
+	},
+	"config": {
+		"allow-plugins": {
+			"typo3/cms-composer-installers": true,
+			"typo3/class-alias-loader": true,
+			"ergebnis/composer-normalize": true
+		},
+		"sort-packages": true
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ttcontent_addfields"
+			"extension-key": "rcd_fluid_styled_content_custom_css"
 		}
+	},
+	"scripts": {
+		"clean": [
+			"rm -fr config public var vendor .php-cs-fixer.cache composer.lock || true"
+		],
+		"fix": [
+			"@fix:composer",
+			"@fix:php"
+		],
+		"fix:composer": [
+			"@fix:composer:normalize"
+		],
+		"fix:composer:normalize": [
+			"@composer normalize --ansi -n"
+		],
+		"fix:php": [
+			"@fix:php:cs"
+		],
+		"fix:php:cs": "@php php-cs-fixer fix"
 	}
 }
