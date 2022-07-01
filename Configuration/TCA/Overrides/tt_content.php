@@ -10,6 +10,13 @@
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  * The TYPO3 project - inspiring people to share!
  */
@@ -43,5 +50,5 @@ $fields = [
 // Add the new palette:
 $GLOBALS['TCA']['tt_content']['palettes']['rcd_fluid_styled_content_custom_css'] = [
     'label' => 'LLL:EXT:rcd_fluid_styled_content_custom_css/Resources/Private/Language/locallang_db.xlf:tt_content.custom_css_palette_title',
-    'showitem' => 'tx_rcd_fluid_styled_content_custom_css_class'
+    'showitem' => 'tx_rcd_fluid_styled_content_custom_css_class',
 ];
