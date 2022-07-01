@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<EOM
-This file is part of the rcdesign/ttcontent-addfields package.
+This file is part of the rcdesign/fluid-styled-content-custom-css package.
 
 Copyright (C) 2022  rc design visual concepts <https://rc-design.at>
 
