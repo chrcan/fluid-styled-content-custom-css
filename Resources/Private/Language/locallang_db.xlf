@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
-          product-name="rcd_fluid_styled_content_custom_css">
+          product-name="rcd_fsc_custom_css">
         <header/>
         <body>
             <trans-unit id="tt_content.custom_css_palette_title">
