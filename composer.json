@@ -22,10 +22,18 @@
 		"typo3/cms-core": "^11.5",
 		"typo3/cms-fluid-styled-content": "^11.5"
 	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "*",
+		"typo3-console/composer-auto-commands": "*",
+		"typo3-console/composer-typo3-auto-install": "*",
+		"typo3/cms-lowlevel": "*",
+		"typo3/coding-standards": "*"
+	},
 	"config": {
 		"allow-plugins": {
 			"typo3/cms-composer-installers": true,
-			"typo3/class-alias-loader": true
+			"typo3/class-alias-loader": true,
+			"ergebnis/composer-normalize": true
 		},
 		"sort-packages": true
 	},
