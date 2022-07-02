@@ -80,5 +80,16 @@
 			"@fix:php:cs"
 		],
 		"fix:php:cs": "@php php-cs-fixer fix"
+	},
+	"scripts-descriptions": {
+		"clean": "Clean deletes the existing TYPO3 installation and temporary files",
+		"ci": "Runs all dynamic and static code checks.",
+		"ci:composer:normalize": "Checks the composer.json.",
+		"ci:dynamic": "Runs all PHPUnit tests (unit and functional).",
+		"ci:php": "Runs all static checks for the PHP files.",
+		"ci:php:cs-fixer": "Checks the code style with the PHP Coding Standards Fixer (PHP-CS-Fixer).",
+		"ci:static": "Runs all static code checks (syntax, style, types).",
+		"fix:php": "Runs all fixers for the PHP code.",
+		"fix:php:cs": "Fixes the code style with PHP-CS-Fixer."
 	}
 }
