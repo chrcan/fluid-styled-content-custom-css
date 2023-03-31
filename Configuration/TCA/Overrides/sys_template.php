@@ -23,6 +23,11 @@
 
 defined('TYPO3') or die();
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    'rcd_fsc_custom_css',
+    'Configuration/TypoScript',
+    'FSC-Custom-Css'
+);
 // Replace FSC static include
 foreach ($GLOBALS['TCA']['sys_template']['columns']['include_static_file']['config']['items'] as &$itemArray) {
     if ($itemArray[0] === 'Fluid Content Elements (fluid_styled_content)') {
