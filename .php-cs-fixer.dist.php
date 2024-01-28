@@ -3,7 +3,7 @@
 $header = <<<EOM
 This file is part of the rcdesign/fluid-styled-content-custom-css package.
 
-Copyright (C) 2022  rc design visual concepts <https://rc-design.at>
+Copyright (C) 2024  rc design visual concepts <https://rc-design.at>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
