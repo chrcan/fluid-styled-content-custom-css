@@ -3,7 +3,7 @@
 /*
  * This file is part of the rcdesign/fluid-styled-content-custom-css package.
  *
- * Copyright (C) 2022  rc design visual concepts <https://rc-design.at>
+ * Copyright (C) 2024  rc design visual concepts <https://rc-design.at>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,11 +28,11 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Christian Racan',
     'author_email' => 'werbegrafik@rc-design.at',
     'state' => 'stable',
-    'version' => '1.0.1',
+    'version' => '1.0.2',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-12.3.99',
-            'fluid_styled_content' => '11.5.0-12.3.99',
+            'typo3' => '11.5.0-12.4.99',
+            'fluid_styled_content' => '11.5.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
