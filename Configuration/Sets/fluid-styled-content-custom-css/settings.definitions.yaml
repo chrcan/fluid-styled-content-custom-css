@@ -1,11 +1,11 @@
 categories:
-  rcd_fsc_custom_css:
-    label: "Neue css Klasse"
+  tx_rcd_fsc_custom_css_class:
+    parent: fsc
 
 settings:
-  animationClass:
-    label: "Neue css Klasse"
-    category: rcd_fsc_custom_css
-    description: "Neue css Klasse"
+  cssClass:
+    label: "Additional field in the tt_content table with a custom CSS class"
+    category: fsc.content
+    description: "This extension broughts an individual CSS field for each content element. If not defined it will fallback to this CSS class for all pages of you website."
     type: string
     default: "rc-animation"

@@ -1,1 +1,5 @@
-@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+lib.contentElement {
+    layoutRootPaths {
+        1 = EXT:rcd_fsc_custom_css/Resources/Private/Layouts/
+    }
+}
