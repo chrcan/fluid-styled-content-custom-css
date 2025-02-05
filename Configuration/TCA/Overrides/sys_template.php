@@ -3,7 +3,7 @@
 /*
  * This file is part of the rcdesign/fluid-styled-content-custom-css package.
  *
- * Copyright (C) 2024  rc design visual concepts <https://rc-design.at>
+ * Copyright (C) 2025  rc design visual concepts <https://rc-design.at>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,11 +28,3 @@ defined('TYPO3') or die();
     'Configuration/TypoScript',
     'FSC-Custom-Css'
 );
-// Replace FSC static include
-// foreach ($GLOBALS['TCA']['sys_template']['columns']['include_static_file']['config']['items'] as &$itemArray) {
-//     if ($itemArray[0] === 'Fluid Content Elements (fluid_styled_content)') {
-//         $itemArray[0] = 'Fluid Content Elements (rcd_fsc_custom_css)';
-//         $itemArray[1] = 'EXT:rcd_fsc_custom_css/Configuration/TypoScript/';
-//         break;
-//     }
-// }

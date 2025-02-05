@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:rcd_fsc_custom_css/Configuration/Sets/fluid-styled-content-custom-css/labels.xlf" date="2024-09-05T08:00:00Z" product-name="rcd_fsc_custom_css">
+		<header/>
+		<body>
+			<trans-unit id="label">
+				<source>Additional field in the tt_content table with a custom CSS class</source>
+			</trans-unit>
+			<trans-unit id="settings.cssClass">
+				<source>Custom CSS</source>
+			</trans-unit>
+			<trans-unit id="settings.description.cssClass">
+				<source>This extension broughts an individual CSS field for each content element. If not defined it will fallback to this CSS class for all pages of you website.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
