@@ -1,0 +1,11 @@
+categories:
+  rcd_fsc_custom_css:
+    label: "Neue css Klasse"
+
+settings:
+  animationClass:
+    label: "Neue css Klasse"
+    category: rcd_fsc_custom_css
+    description: "Neue css Klasse"
+    type: string
+    default: "rc-animation"
