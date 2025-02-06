@@ -28,6 +28,11 @@
 		"typo3/cms-tstemplate": "*",
 		"typo3/coding-standards": "*"
 	},
+	"autoload": {
+		"psr-4": {
+			"Rcdesign\\RcdFscCustomCss\\": "Classes/"
+		}
+	},
 	"config": {
 		"allow-plugins": {
 			"ergebnis/composer-normalize": true,
@@ -35,11 +40,6 @@
 			"typo3/cms-composer-installers": true
 		},
 		"sort-packages": true
-	},
-	"autoload": {
-		"psr-4": {
-			"Rcdesign\\RcdFscCustomCss\\": "Classes/"
-		}
 	},
 	"extra": {
 		"typo3/cms": {
