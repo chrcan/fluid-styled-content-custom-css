@@ -36,6 +36,11 @@
 		},
 		"sort-packages": true
 	},
+	"autoload": {
+		"psr-4": {
+			"Rcdesign\\RcdFscCustomCss\\": "Classes/"
+		}
+	},
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "rcd_fsc_custom_css"

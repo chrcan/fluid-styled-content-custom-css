@@ -31,6 +31,11 @@ $fields = [
         'config' => [
             'type' => 'input',
             'max' => 255,
+            'renderType' => 'cssField',
+            'parameters' => [
+                'size' => '30',
+                'color' => '#de001f',
+            ],
         ],
     ],
 ];
