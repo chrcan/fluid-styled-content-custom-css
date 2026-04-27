@@ -17,8 +17,7 @@ on:
 
 env:
   COMPOSER_FLAGS: --ansi --no-interaction --no-progress
-  COMPOSER_INSTALL_FLAGS: --prefer-dist
-  TYPO3_IS_SET_UP: 1
+  COMPOSER_INSTALL_FLAGS: --prefer-dist --no-scripts
 
 defaults:
   run:
