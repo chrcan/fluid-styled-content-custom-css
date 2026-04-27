@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="21.333332"
+   height="21.333332"
+   viewBox="0 0 21.333332 21.333332"
+   sodipodi:docname="rcdesign.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs6"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20"><path
+         d="M 0,16 H 16 V 0 H 0 Z"
+         id="path18" /></clipPath></defs><sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0" /><g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="rcdesign"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,21.333333)"><g
+       id="g10"
+       transform="translate(0,14.6457)"><path
+         d="m 0,0 v -11.969 h 15.961 v 9.975 H 8.31 L 6.983,0 Z"
+         style="fill:#c31c26;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path12" /></g><g
+       id="g14"><g
+         id="g16"
+         clip-path="url(#clipPath20)"><g
+           id="g22"
+           transform="translate(4.125,10.1328)"><path
+             d="m 0,0 c 0.564,1.198 1.212,1.629 2.638,1.755 h 0.15 L 2.786,-0.892 C 1.494,-0.892 1.001,-1.001 0.565,-1.42 0.256,-1.711 0.055,-2.148 0.019,-2.605 0,-2.787 0,-3.079 0,-3.442 V -6.743 H -3.078 V 1.755 H 0 Z"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path24" /></g><g
+           id="g26"
+           transform="translate(14.9131,11.8862)"><path
+             d="m 0,0 -0.013,-8.495 h -3.54 c 0.604,0.145 1.115,0.375 1.527,0.694 0.745,0.547 1.001,1.113 1.147,2.497 h -3.097 c -0.056,-0.619 -0.073,-0.747 -0.164,-0.967 -0.147,-0.4 -0.584,-0.637 -1.111,-0.637 -1.056,0 -1.53,0.783 -1.53,2.533 0,1.966 0.401,2.732 1.438,2.732 0.783,0 1.131,-0.347 1.239,-1.203 0,-0.054 0.019,-0.146 0.019,-0.256 h 3.022 c -0.015,1.646 -1.085,2.763 -2.889,3.11 z"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path28" /></g></g></g></g></svg>
