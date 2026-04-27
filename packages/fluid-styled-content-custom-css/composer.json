@@ -1,0 +1,40 @@
+{
+	"name": "rcdesign/fluid-styled-content-custom-css",
+	"description": "CSS fields for Fluid Styled Content",
+	"license": "GPL-3.0-or-later",
+	"type": "typo3-cms-extension",
+	"authors": [
+		{
+			"name": "Christian Racan",
+			"email": "werbegrafik@rc-design.at",
+			"role": "Developer"
+		},
+		{
+			"name": "Simon Gilli",
+			"email": "simon.gilli@gilbertsoft.com",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://www.rc-design.at",
+	"require": {
+		"typo3/cms-core": "^11.5 || ^12.4 || ^13.4 || ^14.0",
+		"typo3/cms-fluid-styled-content": "^11.5 || ^12.4 || ^13.4 || ^14.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Rcdesign\\RcdFscCustomCss\\": "Classes/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
+		"sort-packages": true
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "rcd_fsc_custom_css"
+		}
+	}
+}
