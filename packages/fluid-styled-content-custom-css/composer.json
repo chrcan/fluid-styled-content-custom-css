@@ -24,7 +24,9 @@
 	"require-dev": {
 		"ergebnis/composer-normalize": "^2.0",
 		"friendsofphp/php-cs-fixer": "^3.0",
-		"typo3/coding-standards": "^0.8"
+		"typo3/cms-lowlevel": "*",
+		"typo3/cms-tstemplate": "*",
+		"typo3/coding-standards": "*"
 	},
 	"autoload": {
 		"psr-4": {
@@ -45,10 +47,50 @@
 		}
 	},
 	"scripts": {
+		"ci": [
+			"@ci:static",
+			"@ci:dynamic"
+		],
+		"ci:composer": [
+			"@ci:composer:normalize",
+			"@ci:composer:validate"
+		],
 		"ci:composer:normalize": "@composer normalize --ansi -n --dry-run",
 		"ci:composer:validate": "@composer validate --ansi -n --strict",
+		"ci:dynamic": [
+			"# No dynamic tests defined"
+		],
+		"ci:php": [
+			"@ci:php:cs-fixer"
+		],
 		"ci:php:cs-fixer": "@php vendor/bin/php-cs-fixer fix -v --dry-run --diff --using-cache no",
-		"fix:composer": "@composer normalize --ansi -n",
+		"ci:static": [
+			"@ci:composer",
+			"@ci:php"
+		],
+		"fix": [
+			"@fix:composer",
+			"@fix:php"
+		],
+		"fix:composer": [
+			"@fix:composer:normalize"
+		],
+		"fix:composer:normalize": [
+			"@composer normalize --ansi -n"
+		],
+		"fix:php": [
+			"@fix:php:cs"
+		],
 		"fix:php:cs": "@php vendor/bin/php-cs-fixer fix"
+	},
+	"scripts-descriptions": {
+		"ci": "Runs all dynamic and static code checks.",
+		"ci:composer:normalize": "Checks the composer.json.",
+		"ci:dynamic": "Runs all PHPUnit tests (unit and functional).",
+		"ci:php": "Runs all static checks for the PHP files.",
+		"ci:php:cs-fixer": "Checks the code style with the PHP Coding Standards Fixer (PHP-CS-Fixer).",
+		"ci:static": "Runs all static code checks (syntax, style, types).",
+		"fix:php": "Runs all fixers for the PHP code.",
+		"fix:php:cs": "Fixes the code style with PHP-CS-Fixer."
 	}
 }
