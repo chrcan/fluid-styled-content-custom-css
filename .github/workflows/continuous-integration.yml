@@ -17,7 +17,7 @@ on:
 
 env:
   COMPOSER_FLAGS: --ansi --no-interaction --no-progress
-  COMPOSER_INSTALL_FLAGS: --prefer-dist --no-scripts
+  COMPOSER_INSTALL_FLAGS: --prefer-dist --no-scripts --no-plugins
 
 defaults:
   run:
