@@ -18,6 +18,7 @@ on:
 env:
   COMPOSER_FLAGS: --ansi --no-interaction --no-progress
   COMPOSER_INSTALL_FLAGS: --prefer-dist --no-scripts --no-plugins
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 defaults:
   run:
