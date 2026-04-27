@@ -7,19 +7,21 @@ on:
       - '[0-9]+.*'
     paths-ignore:
       - '.ddev/**'
-      - '.vscode/*'
+      - '.vscode/**'
       - '**.rst'
   pull_request:
     paths-ignore:
       - '.ddev/**'
-      - '.vscode/*'
+      - '.vscode/**'
       - '**.rst'
 
 env:
   COMPOSER_FLAGS: --ansi --no-interaction --no-progress
   COMPOSER_INSTALL_FLAGS: --prefer-dist
-  COMPOSER_UPDATE_FLAGS: ''
-  TYPO3_IS_SET_UP: 1
+
+defaults:
+  run:
+    working-directory: packages/fluid-styled-content-custom-css
 
 jobs:
   validation:
@@ -28,32 +30,15 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          coverage: none
-          extensions: intl, zip
-          ini-values: memory_limit=-1, error_reporting=E_ALL, display_errors=On
           php-version: latest
           tools: composer
-
-      - name: Composer Cache Vars
-        id: composer-cache-vars
-        run: |
-          echo "dir=$(composer config cache-files-dir)" >>$GITHUB_OUTPUT
-          echo "timestamp=$(date +"%s")" >>$GITHUB_OUTPUT
-
-      - name: Cache Composer dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.composer-cache-vars.outputs.dir }}
-          key: ${{ runner.os }}-composer-latest-stable-${{ steps.composer-cache-vars.outputs.timestamp }}
-          restore-keys: |
-            ${{ runner.os }}-composer-latest-stable-
-            ${{ runner.os }}-composer-latest-
-            ${{ runner.os }}-composer-
+          coverage: none
+          extensions: intl, zip
 
       - name: Install dependencies
         run: composer install ${{ env.COMPOSER_INSTALL_FLAGS }} ${{ env.COMPOSER_FLAGS }}
@@ -70,35 +55,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
+          php-version: '8.3'
+          tools: composer
           coverage: none
           extensions: intl, zip
-          ini-values: memory_limit=-1, error_reporting=E_ALL, display_errors=On
-          php-version: '8.1'
-          tools: composer
-
-      - name: Composer Cache Vars
-        id: composer-cache-vars
-        run: |
-          echo "dir=$(composer config cache-files-dir)" >>$GITHUB_OUTPUT
-          echo "timestamp=$(date +"%s")" >>$GITHUB_OUTPUT
-
-      - name: Cache Composer dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.composer-cache-vars.outputs.dir }}
-          key: ${{ runner.os }}-composer-latest-stable-${{ steps.composer-cache-vars.outputs.timestamp }}
-          restore-keys: |
-            ${{ runner.os }}-composer-latest-stable-
-            ${{ runner.os }}-composer-latest-
-            ${{ runner.os }}-composer-
 
       - name: Install dependencies
         run: composer install ${{ env.COMPOSER_INSTALL_FLAGS }} ${{ env.COMPOSER_FLAGS }}
 
-      - name: Validation of coding standards for PHP files
+      - name: PHP Coding Standards
         run: composer ci:php:cs-fixer

@@ -3,6 +3,7 @@
 
 # Außnahmen
 !/.gitignore
+!/.github/
 !/packages/
 
 # Nur die Extension tracken

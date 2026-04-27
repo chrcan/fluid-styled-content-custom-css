@@ -17,8 +17,14 @@
 	],
 	"homepage": "https://www.rc-design.at",
 	"require": {
+		"php": ">=8.1",
 		"typo3/cms-core": "^11.5 || ^12.4 || ^13.4 || ^14.0",
 		"typo3/cms-fluid-styled-content": "^11.5 || ^12.4 || ^13.4 || ^14.0"
+	},
+	"require-dev": {
+		"ergebnis/composer-normalize": "^3.0",
+		"friendsofphp/php-cs-fixer": "^3.0",
+		"typo3/coding-standards": "^0.8"
 	},
 	"autoload": {
 		"psr-4": {
@@ -27,6 +33,7 @@
 	},
 	"config": {
 		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
 		},
@@ -36,5 +43,12 @@
 		"typo3/cms": {
 			"extension-key": "rcd_fsc_custom_css"
 		}
+	},
+	"scripts": {
+		"ci:composer:normalize": "@composer normalize --ansi -n --dry-run",
+		"ci:composer:validate": "@composer validate --ansi -n --strict",
+		"ci:php:cs-fixer": "@php vendor/bin/php-cs-fixer fix -v --dry-run --diff --using-cache no",
+		"fix:composer": "@composer normalize --ansi -n",
+		"fix:php:cs": "@php vendor/bin/php-cs-fixer fix"
 	}
 }
