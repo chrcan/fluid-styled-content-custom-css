@@ -3,23 +3,22 @@ name: Continuous Integration (CI)
 on:
   push:
     branches:
-      - 'main'
-      - '[0-9]+.*'
+      - "main"
+      - "[0-9]+.*"
     paths-ignore:
-      - '.ddev/**'
-      - '.vscode/**'
-      - '**.rst'
+      - ".ddev/**"
+      - ".vscode/**"
+      - "**.rst"
   pull_request:
     paths-ignore:
-      - '.ddev/**'
-      - '.vscode/**'
-      - '**.rst'
+      - ".ddev/**"
+      - ".vscode/**"
+      - "**.rst"
 
 env:
   COMPOSER_FLAGS: --ansi --no-interaction --no-progress
   COMPOSER_INSTALL_FLAGS: --prefer-dist --no-scripts --no-plugins
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 
 jobs:
   validation:
@@ -53,12 +52,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.3'
+          php-version: "8.3"
           tools: composer
           coverage: none
           extensions: intl, zip
