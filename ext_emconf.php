@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the rcdesign/fluid-styled-content-custom-css package.
  *
@@ -28,7 +30,7 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Christian Racan',
     'author_email' => 'werbegrafik@rc-design.at',
     'state' => 'stable',
-    'version' => '2.0.0',
+    'version' => '3.0.0',
     'constraints' => [
         'depends' => [
             'typo3' => '11.5.0-14.9.99',
