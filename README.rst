@@ -6,7 +6,6 @@ This extension adds some custom CSS fields to content elements of Fluid Styled
 Content.
 
 :Repository:  https://github.com/chrcan/fluid-styled-content-custom-css
-:Read online: https://docs.typo3.org/p/rcdesign/fluid-styled-content-custom-css/main/en-us/
 
 **Installation and Usage Guide**
 
