@@ -1,24 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 /*
- * This file is part of the rcdesign/fluid-styled-content-custom-css package.
- *
- * Copyright (C) 2025  rc design visual concepts <https://rc-design.at>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- *
+ * (c) 2026 rc design visual concepts (rc-design.at)
+ * _________________________________________________
  * The TYPO3 project - inspiring people to share!
+ * _________________________________________________
  */
 
 namespace Rcdesign\RcdFscCustomCss\Form\Element;
@@ -42,22 +30,22 @@ class CssFieldElement extends AbstractFormElement
 
         $attributes = [
             'id' => $fieldId,
-            'name' => htmlspecialchars($parameterArray['itemFormElName']),
+            'name' => htmlspecialchars((string) $parameterArray['itemFormElName']),
             'size' => $size,
             'class' => 'form-control t3js-formengine-textarea formengine-textarea',
-            'data-formengine-input-name' => htmlspecialchars($parameterArray['itemFormElName']),
+            'data-formengine-input-name' => htmlspecialchars((string) $parameterArray['itemFormElName']),
         ];
 
         $itemValue = $parameterArray['itemFormElValue'];
 
         $html = [];
         $html[] = $this->renderLabel($fieldId);
-        $html[] = '<div class="formengine-field-item t3js-formengine-field-item" style="padding: 5px; background-color: ' . htmlspecialchars($color) . ';">';
+        $html[] = '<div class="formengine-field-item t3js-formengine-field-item" style="padding: 5px; background-color: ' . htmlspecialchars((string) $color) . ';">';
         $html[] = $fieldInformationHtml;
         $html[] =   '<div class="form-wizards-wrap">';
         $html[] =      '<div class="form-wizards-element">';
         $html[] =         '<div class="form-control-wrap">';
-        $html[] =            '<input type="text" value="' . htmlspecialchars($itemValue, ENT_QUOTES) . '" ';
+        $html[] =            '<input type="text" value="' . htmlspecialchars((string) $itemValue, ENT_QUOTES) . '" ';
         $html[] =               GeneralUtility::implodeAttributes($attributes, true);
         $html[] =            ' />';
         $html[] =         '</div>';

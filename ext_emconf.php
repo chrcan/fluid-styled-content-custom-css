@@ -3,24 +3,10 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the rcdesign/fluid-styled-content-custom-css package.
- *
- * Copyright (C) 2025  rc design visual concepts <https://rc-design.at>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- *
+ * (c) 2026 rc design visual concepts (rc-design.at)
+ * _________________________________________________
  * The TYPO3 project - inspiring people to share!
+ * _________________________________________________
  */
 
 $EM_CONF[$_EXTKEY] = [
@@ -33,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '3.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-14.9.99',
+            'typo3' => '14.0.0-14.3.99',
             'fluid_styled_content' => '11.5.0-14.9.99',
         ],
         'conflicts' => [],

@@ -1,27 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 /*
- * This file is part of the rcdesign/fluid-styled-content-custom-css package.
- *
- * Copyright (C) 2025  rc design visual concepts <https://rc-design.at>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- *
+ * (c) 2026 rc design visual concepts (rc-design.at)
+ * _________________________________________________
  * The TYPO3 project - inspiring people to share!
+ * _________________________________________________
  */
 
-defined('TYPO3') or die();
+defined('TYPO3') || die();
 
 // Configure new fields:
 $fields = [
@@ -41,10 +31,10 @@ $fields = [
 ];
 
 // Add new fields to tt_content assets:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $fields);
+ExtensionManagementUtility::addTCAcolumns('tt_content', $fields);
 
 // Make fields visible in the TCEforms:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content', // Table name
     '--palette--;;rcd_fsc_custom_css',
     // Field list to add
